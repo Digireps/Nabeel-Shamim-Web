@@ -146,54 +146,56 @@ const PublishedBooksSection = () => {
           </motion.div>
 
           {/* BOOK 02 */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="py-12 last:pb-0 flex flex-col md:flex-row gap-8 items-start justify-between"
-          >
-            {/* Left Column: Number & Book cover */}
-            <div className="flex gap-6 items-start shrink-0">
-             
-              
-              {/* Flat, editorial shadow style cover */}
-              <div className="relative w-[110px] h-[165px] bg-zinc-50 border border-zinc-100 rounded-sm overflow-hidden shadow-[2px_10px_20px_rgba(0,0,0,0.06)] group cursor-pointer shrink-0">
-                <img
-                  src="/gallery/fivelens-cover.png"
-                  alt="Nabeel Shamim's Five Lens™ Book Cover"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
+          {false && (
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="py-12 last:pb-0 flex flex-col md:flex-row gap-8 items-start justify-between"
+            >
+              {/* Left Column: Number & Book cover */}
+              <div className="flex gap-6 items-start shrink-0">
+               
+                
+                {/* Flat, editorial shadow style cover */}
+                <div className="relative w-[110px] h-[165px] bg-zinc-50 border border-zinc-100 rounded-sm overflow-hidden shadow-[2px_10px_20px_rgba(0,0,0,0.06)] group cursor-pointer shrink-0">
+                  <img
+                    src="/gallery/fivelens-cover.png"
+                    alt="Nabeel Shamim's Five Lens™ Book Cover"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
               </div>
-            </div>
 
-            {/* Right Column: Title, description and clean text CTA */}
-            <div className="flex-grow max-w-2xl space-y-4">
-              <span className="inline-block text-[9px] font-black uppercase tracking-widest text-primary/65">
-                Diagnostic Blueprint
-              </span>
-              <h3 className="text-xl md:text-2xl font-bold tracking-tight text-[#1d1d1f] leading-snug">
-                Nabeel Shamim’s Five Lens™
-              </h3>
-              <p className="text-zinc-500 text-sm md:text-base leading-relaxed">
-                Dissecting and Solving Critical Business Challenges through MPACT™
-              </p>
-              
-              <div className="pt-2">
-                <button 
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setIsFormOpen(true);
-                  }}
-                  className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-[#1d1d1f] hover:text-primary transition-colors group/link cursor-pointer border-none bg-transparent p-0"
-                >
-                  <Send size={14} />
-                  <span>Request a free copy</span>
-                  <ArrowRight size={14} className="group-hover/link:translate-x-1 transition-transform duration-300" />
-                </button>
+              {/* Right Column: Title, description and clean text CTA */}
+              <div className="flex-grow max-w-2xl space-y-4">
+                <span className="inline-block text-[9px] font-black uppercase tracking-widest text-primary/65">
+                  Diagnostic Blueprint
+                </span>
+                <h3 className="text-xl md:text-2xl font-bold tracking-tight text-[#1d1d1f] leading-snug">
+                  Nabeel Shamim’s Five Lens™
+                </h3>
+                <p className="text-zinc-500 text-sm md:text-base leading-relaxed">
+                  Dissecting and Solving Critical Business Challenges through MPACT™
+                </p>
+                
+                <div className="pt-2">
+                  <button 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsFormOpen(true);
+                    }}
+                    className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-[#1d1d1f] hover:text-primary transition-colors group/link cursor-pointer border-none bg-transparent p-0"
+                  >
+                    <Send size={14} />
+                    <span>Request a free copy</span>
+                    <ArrowRight size={14} className="group-hover/link:translate-x-1 transition-transform duration-300" />
+                  </button>
+                </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          )}
 
         </div>
 
