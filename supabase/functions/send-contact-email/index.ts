@@ -38,15 +38,15 @@ Deno.serve(async (req) => {
             Thank you for requesting a free copy of <strong>Nabeel Shamim's Five Lens™: Dissecting and Solving Critical Business Challenges through MPACT™</strong>.
           </p>
           <div style="margin: 32px 0; text-align: center;">
-            <a href="https://ecpcttnnwbukfvkioitt.supabase.co/storage/v1/object/public/publications/five-lens-ebook.pdf" 
+            <a href="https://cmsijfquhidzaaqxujzd.supabase.co/storage/v1/object/public/publications/five-lens-ebook.pdf" 
                style="background-color: #030712; color: #ffffff; padding: 14px 28px; border-radius: 9999px; text-decoration: none; font-size: 14px; font-weight: bold; display: inline-block;">
               Download E-Book (PDF)
             </a>
           </div>
           <p style="font-size: 14px; color: #6b7280; line-height: 1.6;">
             If the button above does not work, copy and paste this URL into your browser:<br>
-            <a href="https://ecpcttnnwbukfvkioitt.supabase.co/storage/v1/object/public/publications/five-lens-ebook.pdf" style="color: #2563eb;">
-              https://ecpcttnnwbukfvkioitt.supabase.co/storage/v1/object/public/publications/five-lens-ebook.pdf
+            <a href="https://cmsijfquhidzaaqxujzd.supabase.co/storage/v1/object/public/publications/five-lens-ebook.pdf" style="color: #2563eb;">
+              https://cmsijfquhidzaaqxujzd.supabase.co/storage/v1/object/public/publications/five-lens-ebook.pdf
             </a>
           </p>
           <hr style="border: 0; border-top: 1px solid #e5e7eb; margin: 32px 0;" />
