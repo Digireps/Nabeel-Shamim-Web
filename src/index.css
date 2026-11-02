@@ -99,6 +99,40 @@
     100% { transform: translateX(-50%); }
   }
 
+  /* ── Gallery infinite loop ── */
+  .gallery-loop-track {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+  }
+
+  .gallery-card {
+    position: relative;
+    flex-shrink: 0;
+    width: 320px;
+    aspect-ratio: 16 / 10;
+    border-radius: 1.75rem;
+    overflow: hidden;
+    background: #f4f4f5;
+    border: 1px solid #e4e4e7;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+                transform   0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .gallery-card:hover {
+    box-shadow: 0 20px 56px rgba(0, 0, 0, 0.14);
+    transform: scale(1.025);
+  }
+
+  @media (min-width: 768px) {
+    .gallery-card {
+      width: 440px;
+    }
+  }
+  /* ── end Gallery ── */
+
   .card-clean {
     background: hsl(var(--card));
     border: 1px solid hsl(var(--border));

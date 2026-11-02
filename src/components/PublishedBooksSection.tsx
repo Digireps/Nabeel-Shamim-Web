@@ -94,7 +94,7 @@ const PublishedBooksSection = () => {
 
         {/* Editorial-style Book list (Rows instead of heavy grids) */}
         <div className="divide-y divide-zinc-100">
-          
+        
           {/* BOOK 01 */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -108,17 +108,17 @@ const PublishedBooksSection = () => {
               
               
               {/* Flat, editorial shadow style cover */}
-              <div className="relative w-[110px] h-[165px] bg-zinc-50 border border-zinc-100 rounded-sm overflow-hidden shadow-[2px_10px_20px_rgba(0,0,0,0.06)] group cursor-pointer">
+              {/* <div className="relative w-[110px] h-[165px] bg-zinc-50 border border-zinc-100 rounded-sm overflow-hidden shadow-[2px_10px_20px_rgba(0,0,0,0.06)] group cursor-pointer">
                 <img
                   src="/gallery/digireps-cover.png"
                   alt="The DigiReps® Remote Talent Performance Framework™ Book Cover"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-              </div>
+              </div> */}
             </div>
 
             {/* Right Column: Title, description and clean text CTA */}
-            <div className="flex-grow max-w-2xl space-y-4">
+            {/* <div className="flex-grow max-w-2xl space-y-4">
               <span className="inline-block text-[9px] font-black uppercase tracking-widest text-primary/65">
                 Business Playbook
               </span>
@@ -144,7 +144,7 @@ const PublishedBooksSection = () => {
                   Internationally Published
                 </span>
               </div>
-            </div>
+            </div> */}
           </motion.div>
 
           {/* BOOK 02 */}

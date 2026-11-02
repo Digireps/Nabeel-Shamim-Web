@@ -50,7 +50,7 @@ const HeroSection = () => {
           </span>
         </motion.h1>
         <p className="sr-only">
-          Muhammad Nabeel Shamim — Founder & CEO of DigiReps, Forbes Business Council Member, Pakistani entrepreneur
+          Muhammad Nabeel Shamim — Founder & CEO of DigiReps®, Forbes Business Council Member, Pakistani entrepreneur
           pioneering remote workforce solutions globally.
         </p>
 

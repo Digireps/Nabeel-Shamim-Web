@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="md:col-span-3">
             <h4 className="font-dm font-black text-[12px] uppercase tracking-[0.6em] mb-8 text-primary/70">Navigation</h4>
             <nav aria-label="Site navigation" className="flex flex-col gap-4">
-              {["About", "Ventures", "Roles", "Press"].map((link) => (
+              {["About", "Ventures", "Awards", "Roles", "Press"].map((link) => (
                 <a
                   key={link}
                   href={`#${link.toLowerCase().replace(/ /g, "-")}`}
@@ -49,7 +49,7 @@ const Footer = () => {
             <div className="flex items-center gap-4 mb-8">
               {[
                 { icon: Linkedin, url: "https://www.linkedin.com/in/mnabeelshamim/", label: "LinkedIn" },
-                { icon: Globe, url: "https://digireps.co", label: "DigiReps" },
+                { icon: Globe, url: "https://digireps.co", label: "DigiReps®" },
                 // Email object removed from this list
               ].map((social, i) => (
                 <motion.a
@@ -71,7 +71,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="group text-sm font-bold text-primary flex items-center gap-2 hover:gap-3 transition-all"
             >
-              Visit DigiReps <ArrowUpRight size={16} />
+              Visit DigiReps® <ArrowUpRight size={16} />
             </a>
           </div>
         </div>

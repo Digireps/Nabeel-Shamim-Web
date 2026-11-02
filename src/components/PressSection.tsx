@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 
 const podcasts = [
   {
-    title: "Building DigiReps & Scaling Sales Teams",
+    title: "Building DigiReps® & Scaling Sales Teams",
     videoId: "eM5UImLqFU8",
     url: "https://youtu.be/eM5UImLqFU8?si=u13McsNzsLWKCcEy",
   },
@@ -20,7 +20,7 @@ const podcasts = [
     url: "https://youtu.be/jbCObAiOZiQ?si=bMM-DvA7D9Dd1HG_",
   },
   {
-    title: "The CxO Talk: Scaling DigiReps & Global Sales",
+    title: "The CxO Talk: Scaling DigiReps® & Global Sales",
     videoId: "ast3S1y5Xgo",
     url: "https://www.youtube.com/live/ast3S1y5Xgo?si=f2hgcVbn37X0siwZ",
   },
@@ -28,26 +28,47 @@ const podcasts = [
 
 const featuredItems = [
   {
+    title: "From Personal Ambition to Borderless Businesses",
+    source: "GritDaily",
+    watermark: "GritDaily",
+    url: "https://gritdaily.com/the-journey-of-muhammad-nabeel-shamim/",
+  },
+  {
     title: "Forbes Business Council Member Profile",
     source: "Forbes Council",
     watermark: "FORBES",
     url: "https://councils.forbes.com/profile/Muhammad-Nabeel-Shamim-Founder-CEO-DigiReps/f15d004f-bae0-4bee-8276-1af1b187609e",
-    featured: true,
+  },
+  {
+    title: "Building Businesses and Shaping Modern Entrepreneurship",
+    source: "Daily Pakistan Article",
+    watermark: "Daily",
+    url: "https://en.dailypakistan.com.pk/16-Oct-2024/muhammad-nabeel-shamim-building-businesses-and-shaping-modern-entrepreneurship",
+  },
+  {
+    title: "Building a Cross-Border Blueprint",
+    source: "CEO World Magazine",
+    watermark: "CEO World",
+    url: "https://ceoworld.biz/2026/08/13/how-nabeel-shamim-is-building-a-cross-border-blueprint-for-technology-enabled-workforces-and-revenue-operations/",
+  },
+  {
+    title: "Featured in Startup Pakistan’s Entrepreneur Spotlight",
+    source: "Startup Pakistan",
+    watermark: "STARTUP",
+    url: "https://startuppakistan.com.pk/pakistani-entrepreneur-muhammad-nabeel-shamim-makes-it-to-forbes/",
   },
   {
     title: "Muhammad Nabeel Shamim: A Name to Watch in Entrepreneurship & Technology",
     source: "FHM Pakistan",
     watermark: "FHM",
     url: "https://www.fhmpakistan.com/muhammad-nabeel-shamim-a-name-to-watch-in-entrepreneurship-technology-global/",
-    featured: true,
   },
-  {
-    title: "Top 100 Entrepreneurs",
-    source: "CXO Global Forum",
-    watermark: "CXO",
-    url: "https://www.cxoglobal.com",
-    featured: false,
-  },
+  // {
+  //   title: "Top 100 Entrepreneurs",
+  //   source: "CXO Global Forum",
+  //   watermark: "CXO",
+  //   url: "https://www.cxoglobal.com",
+  // },
   {
     title: "Muhammad Nabeel Shamim Makes It To Forbes",
     source: "Business Bytes",
@@ -55,20 +76,13 @@ const featuredItems = [
     url: "https://businessbytes.pk/blog/2025/09/22/pakistani-entrepreneur-muhammad-nabeel-shamim-makes-it-to-forbes/",
     featured: false,
   },
-  {
-    title: "Featured in Startup Pakistan’s Entrepreneur Spotlight",
-    source: "Startup Pakistan",
-    watermark: "STARTUP",
-    url: "https://startuppakistan.com.pk/pakistani-entrepreneur-muhammad-nabeel-shamim-makes-it-to-forbes/",
-    featured: false,
-  },
-  {
-    title: "Featured in PRWeb’s Press Release on Forbes Induction",
-    source: "PRWeb",
-    watermark: "PRWEB",
-    url: "https://www.prweb.com/releases/digireps-founder--ceo-muhammad-n-shamim-inducted-into-forbes-business-council-302574419.html",
-    featured: false,
-  },
+  
+  // {
+  //   title: "Featured in PRWeb’s Press Release on Forbes Induction",
+  //   source: "PRWeb",
+  //   watermark: "PRWEB",
+  //   url: "https://www.prweb.com/releases/digireps-founder--ceo-muhammad-n-shamim-inducted-into-forbes-business-council-302574419.html",
+  // },
 ];
 
 const PressSection = () => {
@@ -97,82 +111,86 @@ const PressSection = () => {
 
           {/* As Featured In strip - High visibility brands */}
           <motion.div
-            className="flex flex-col items-center gap-6 mb-14"
+            className="flex flex-col items-center gap-6 mb-16"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-10px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-500 font-bold">As Featured In</span>
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 md:gap-x-10 px-4 md:px-0">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 sm:gap-x-8 md:gap-x-9 gap-y-5 px-4 md:px-0 max-w-5xl mx-auto">
                {[
+                { src: "/gallery/GritDaily.png", alt: "GritDaily publication on Muhammad Nabeel Shamim" },
                 { src: "/gallery/Forbes.png", alt: "Forbes publication featuring Muhammad Nabeel Shamim" },
-                { src: "/gallery/FHM.png", alt: "FHM Pakistan feature on Nabeel Shamim" },
+                { src: "/gallery/DailyPakistan.png", alt: "Daily Pakistan article on Muhammad Nabeel Shamim" },
+                { src: "/gallery/CeoWorld.png", alt: "CEO World Magazine feature on Nabeel Shamim" },
                 { src: "/gallery/StartupPakistan.png", alt: "Startup Pakistan spotlight on entrepreneur Nabeel Shamim" },
+                { src: "/gallery/FHM.png", alt: "FHM Pakistan feature on Nabeel Shamim" },
+                { src: "/gallery/Business-Bytes.png", alt: "Business Bytes press report on Muhammad Nabeel Shamim" },
                 { src: "/gallery/Loug.png", alt: "Loug media interview with Nabeel Shamim" },
                 { src: "/gallery/Metatainment.png", alt: "Metatainment news coverage on Nabeel Shamim" },
-                { src: "/gallery/CXO-Global.png", alt: "CXO Global Forum award recognition for Nabeel Shamim" },
-                { src: "/gallery/Business-Bytes.png", alt: "Business Bytes press report on Muhammad Nabeel Shamim" },
               ].map((logo) => (
-                <img
-                  key={logo.alt}
-                  src={logo.src}
-                  alt={logo.alt}
-                  className="h-4 sm:h-5 md:h-7 w-auto object-contain opacity-45 hover:opacity-100 transition-opacity duration-300"
-                  loading="lazy"
-                />
+                <div key={logo.src} className="flex items-center justify-center py-1">
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="h-4 sm:h-5 md:h-6 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300"
+                    loading="lazy"
+                  />
+                </div>
               ))}
             </div>
           </motion.div>
           {/* Featured highlight cards */}
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-7">
             {featuredItems.map((item, i) => (
               <motion.a
                 key={i}
                 href={item.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex flex-col justify-end p-8 md:p-12 rounded-[2.5rem] bg-white/[0.03] border border-white/5 hover:border-primary/30 transition-all duration-500 overflow-hidden min-h-[350px]"
+                className="group relative flex flex-col justify-between p-6 sm:p-7 md:p-8 rounded-2xl md:rounded-3xl bg-white/[0.03] border border-white/5 hover:border-primary/30 transition-all duration-500 overflow-hidden min-h-[260px] md:min-h-[280px]"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-10px" }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                whileHover={{ y: -8 }}
+                whileHover={{ y: -6 }}
               >
                 {/* Radial Hover Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
-                {/* Badge conditional rendering */}
-                {item.featured && (
-                  <div className="absolute top-8 right-8 z-10">
-                    <Badge className="bg-primary text-black font-black text-[10px] uppercase tracking-wider gap-1 border-none px-4 py-1.5 shadow-lg shadow-primary/20">
-                      <Award size={12} />
-                      Featured
-                    </Badge>
+                {/* Watermark in background */}
+                <span className="absolute -bottom-4 -right-4 text-6xl md:text-7xl font-black text-white/[0.02] group-hover:text-primary/[0.05] select-none pointer-events-none transition-all duration-700 leading-none uppercase">
+                  {item.watermark}
+                </span>
+
+                <div className="relative z-10 flex flex-col">
+                  {/* Card Header: Source + Featured Badge */}
+                  <div className="flex items-center justify-between gap-3 mb-4">
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <div className="h-px w-6 bg-primary/60 group-hover:w-10 transition-all duration-500 shrink-0" />
+                      <p className="text-[11px] uppercase tracking-[0.22em] text-primary font-bold truncate">
+                        {item.source}
+                      </p>
+                    </div>
+                    {item.featured && (
+                      <Badge className="bg-primary text-black font-extrabold text-[9px] uppercase tracking-wider gap-1 border-none px-2.5 py-0.5 shadow-md shadow-primary/20 shrink-0">
+                        <Award size={10} />
+                        Featured
+                      </Badge>
+                    )}
                   </div>
-                )}
 
-                <div className="relative z-10">
-                  {/* Watermark */}
-                  <span className="absolute -top-16 -right-8 text-[12rem] font-black text-white/[0.02] group-hover:text-primary/[0.05] select-none pointer-events-none transition-all duration-700 leading-none">
-                    {item.watermark}
-                  </span>
-
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="h-px w-8 bg-primary/60 group-hover:w-14 transition-all duration-500" />
-                    <p className="text-xs uppercase tracking-[0.3em] text-primary font-bold">
-                      {item.source}
-                    </p>
-                  </div>
-
-                  <h3 className="text-2xl md:text-4xl font-bold tracking-tight text-white group-hover:text-primary transition-colors leading-tight pr-10">
+                  {/* Title */}
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-white group-hover:text-primary transition-colors leading-snug">
                     {item.title}
                   </h3>
+                </div>
 
-                  <div className="mt-8 flex items-center gap-2 text-zinc-500 group-hover:text-white transition-colors">
-                    <span className="text-[10px] font-black uppercase tracking-widest">Verify Publication</span>
-                    <ExternalLink size={14} className="group-hover:translate-x-1 transition-transform" />
-                  </div>
+                {/* Footer action */}
+                <div className="relative z-10 mt-6 pt-2 flex items-center gap-2 text-zinc-400 group-hover:text-primary transition-colors">
+                  <span className="text-[10px] font-black uppercase tracking-widest">Review Feature</span>
+                  <ExternalLink size={13} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </motion.a>
             ))}
