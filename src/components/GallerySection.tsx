@@ -15,6 +15,8 @@ export interface GalleryItem {
     url: string;
     label: string;
   };
+  aspectRatio?: '16/10' | '3/4' | '4/3';
+  objectPosition?: string;
 }
 
 const galleryImages: GalleryItem[] = [
@@ -84,6 +86,72 @@ const galleryImages: GalleryItem[] = [
   },
   { src: "/gallery/16.png",  alt: "Nabeel Shamim discussing business strategies at a roundtable conference" },
   { src: "/gallery/17.png",  alt: "Nabeel Shamim speaking session as a featured entrepreneur" },
+  { 
+    src: "/gallery/18 (1).jpeg", 
+    alt: "Nabeel Shamim during an executive visit in New York City",
+    aspectRatio: "3/4",
+    objectPosition: "center 20%"
+  },
+  { 
+    src: "/gallery/18.jpeg", 
+    alt: "Nabeel Shamim in Manhattan, New York",
+    aspectRatio: "3/4",
+    objectPosition: "center 20%"
+  },
+  { 
+    src: "/gallery/19.jpeg", 
+    alt: "Nabeel Shamim attending a professional networking meetup",
+    aspectRatio: "3/4",
+    objectPosition: "center 20%"
+  },
+  { 
+    src: "/gallery/20.jpeg", 
+    alt: "Nabeel Shamim meeting with international industry colleagues in New York",
+    aspectRatio: "3/4",
+    objectPosition: "center 15%"
+  },
+  { 
+    src: "/gallery/21.jpeg", 
+    alt: "Nabeel Shamim participating in an international business discussion",
+    aspectRatio: "3/4",
+    objectPosition: "center 15%"
+  },
+  { 
+    src: "/gallery/22.jpeg", 
+    alt: "Nabeel Shamim with executives and entrepreneurs at a corporate gathering",
+    aspectRatio: "3/4",
+    objectPosition: "center 18%"
+  },
+  { 
+    src: "/gallery/23.jpeg", 
+    alt: "Nabeel Shamim at an executive summit in the United States",
+    aspectRatio: "4/3",
+    objectPosition: "center 30%"
+  },
+  { 
+    src: "/gallery/24.jpeg", 
+    alt: "Nabeel Shamim networking with global business leaders",
+    aspectRatio: "3/4",
+    objectPosition: "center 15%"
+  },
+  { 
+    src: "/gallery/25.jpeg", 
+    alt: "Nabeel Shamim during an official business trip in the USA",
+    aspectRatio: "3/4",
+    objectPosition: "center 20%"
+  },
+  { 
+    src: "/gallery/26.jpeg", 
+    alt: "Nabeel Shamim attending an industry leadership conference",
+    aspectRatio: "3/4",
+    objectPosition: "center 18%"
+  },
+  { 
+    src: "/gallery/27.jpeg", 
+    alt: "Nabeel Shamim collaborating with executives at an enterprise forum",
+    aspectRatio: "3/4",
+    objectPosition: "center 18%"
+  },
 ];
 
 // 4 sets for seamless infinite loop with forward/backward jumps
@@ -244,11 +312,18 @@ const GallerySection = () => {
           <div className="gallery-loop-track">
             {loopedImages.map((item, index) => {
               const isHighlighted = !!item.highlighted;
+              const aspectClass =
+                item.aspectRatio === '3/4'
+                  ? 'aspect-[3/4]'
+                  : item.aspectRatio === '4/3'
+                  ? 'aspect-[4/3]'
+                  : 'aspect-[16/10]';
+
               return (
                 <div
                   key={index}
                   onClick={() => setSelectedItem(item)}
-                  className="gallery-card group/item"
+                  className={`gallery-card group/item ${aspectClass}`}
                 >
                   <div className="absolute inset-px rounded-[1.7rem] border border-white/60 z-10 pointer-events-none" />
 
@@ -287,10 +362,9 @@ const GallerySection = () => {
                   <img
                     src={item.src}
                     alt={item.alt}
-                    width={720}
-                    height={450}
                     loading="lazy"
                     decoding="async"
+                    style={{ objectPosition: item.objectPosition || 'center center' }}
                     className="w-full h-full object-cover grayscale-[0.25] group-hover/item:grayscale-0 transition-[filter] duration-500 ease-out"
                   />
                 </div>
@@ -401,13 +475,13 @@ const GallerySection = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.92, opacity: 0 }}
                 transition={{ type: "spring", damping: 28, stiffness: 220 }}
-                className="relative max-w-5xl max-h-[85vh] w-full overflow-hidden rounded-3xl shadow-2xl border border-white/10 bg-black/40"
+                className="relative max-w-5xl max-h-[85vh] overflow-hidden rounded-3xl shadow-2xl border border-white/10 bg-black/60 flex items-center justify-center p-2"
                 onClick={(e) => e.stopPropagation()}
               >
                 <img
                   src={selectedItem.src}
                   alt={selectedItem.alt}
-                  className="w-full h-full object-contain"
+                  className="max-w-full max-h-[82vh] w-auto h-auto object-contain rounded-2xl"
                 />
               </motion.div>
             )}
