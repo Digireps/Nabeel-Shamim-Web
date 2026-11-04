@@ -15,12 +15,12 @@ const ventures = [
     details: "Strategic biz-dev & IT company",
     url: "https://www.prodisols.com/"
   },
-  {
-    name: "Digify Global",
-    description: "Digital Growth & Strategy",
-    details: "Expanding digital footprints for global brands.",
-    url: "https://digifyglobal.com/"
-  },
+  // {
+  //   name: "Digify Global",
+  //   description: "Digital Growth & Strategy",
+  //   details: "Expanding digital footprints for global brands.",
+  //   url: "https://digifyglobal.com/"
+  // },
   {
     name: "NB Digital Trading",
     description: "E-Commerce & Assets",

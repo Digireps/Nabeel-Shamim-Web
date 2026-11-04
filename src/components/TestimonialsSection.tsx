@@ -11,7 +11,7 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    quote: "DigiReps® has been handling my lead gen for about a year now, delivering solid, high-quality leads. He checks in regularly via Slack, joins team meetings, and provides end-of-week reports. If you need someone who can generate leads and stay on top of communication, They do it all.",
+    quote: "Muhammad and his remote distributed teams have been handling our projects for a year now, delivering high-quality results. They check in regularly via Slack, join team meetings, and provide end-of-week reports. If you need a reliable remote solution, they are a true growth partner.",
     name: "George Schwartz",
     title: "Founder & CEO, Extension eCom",
     image: "/gallery/clients/George Schwartz - Extension eCom LLC.jpg.jpeg",

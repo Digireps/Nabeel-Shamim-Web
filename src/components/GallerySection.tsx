@@ -21,7 +21,22 @@ export interface GalleryItem {
 
 const galleryImages: GalleryItem[] = [
   { src: "/gallery/1.webp",  alt: "Nabeel Shamim presenting at a corporate event" },
-  { src: "/gallery/2.webp",  alt: "Nabeel Shamim on stage during a business keynote speech" },
+  { 
+    src: "/gallery/2.webp", 
+    alt: "Muhammad Nabeel Shamim featured on the cover of FHM Pakistan magazine",
+    title: "Featured on Cover of FHM Pakistan",
+    subtitle: "FHM Pakistan • Cover Feature",
+    tag: "Media Cover Story",
+    location: "Karachi, Pakistan",
+    description: "Featured on the cover of FHM Pakistan — chronicling the journey of building DigiReps® into one of America's fastest-growing remote workforce solutions, from Karachi to the global stage as a Forbes-recognized entrepreneur.",
+    highlighted: true,
+    link: {
+      url: "https://www.fhmpakistan.com/muhammad-nabeel-shamim-a-name-to-watch-in-entrepreneurship-technology-global/",
+      label: "Read Feature on FHM Pakistan"
+    },
+    aspectRatio: "16/10",
+    objectPosition: "center 20%"
+  },
   { src: "/gallery/3.webp",  alt: "Nabeel Shamim interacting with attendees at a tech summit" },
   { src: "/gallery/4.webp",  alt: "Nabeel Shamim speaking on leadership and entrepreneurship" },
   { 
@@ -53,13 +68,13 @@ const galleryImages: GalleryItem[] = [
   { 
     src: "/gallery/9.webp", 
     alt: "Muhammad Nabeel Shamim with Mayor of Karachi Barrister Murtaza Wahab",
-    title: "Executive Engagement with Mayor of Karachi",
+    title: "Business Venture Inauguration with the Mayor of Karachi",
     subtitle: "Civic Leadership • Karachi",
     tag: "Civic & Leadership Dialogue",
     location: "Karachi, Pakistan",
-    description: "Muhammad Nabeel Shamim alongside Mayor of Karachi, Barrister Murtaza Wahab — exchanging strategic perspectives on urban development, youth digital enablement, and collaborative public-private initiatives to accelerate economic momentum across Karachi.",
+    description: "Muhammad Nabeel Shamim alongside the Mayor of Karachi, Barrister Murtaza Wahab: Inaugurating a new business venture and discussing urban development, youth digital enablement, and collaborative public-private initiatives to accelerate economic momentum across Karachi.",
     highlighted: true
-  },
+},
   { src: "/gallery/10.webp", alt: "Nabeel Shamim giving an interview on business growth and leadership" },
   { 
     src: "/gallery/11.webp", 
@@ -68,7 +83,7 @@ const galleryImages: GalleryItem[] = [
     subtitle: "Iqra University • Karachi",
     tag: "Academic & Jury Keynote",
     location: "Iqra University North Campus, Karachi, Pakistan",
-    description: "Invited as Jury and keynote evaluator for Season 08 of the Youth Entrepreneur Showcase at Iqra University North Campus. Muhammad Nabeel Shamim, Head of Prodigy Solutions®, evaluated student venture pitches on market feasibility, cost and revenue structures, sustainable development goals (SDGs), and go-to-market execution — mentoring emerging entrepreneurial talent.",
+    description: "Invited as a jury member and keynote evaluator for Season 8 of the Youth Entrepreneur Showcase at Iqra University North Campus, Muhammad Nabeel Shamim, Head of Prodigy Solutions®, evaluated young entrepreneurs' pitches on market feasibility, cost and revenue structures, sustainable development goals (SDGs), and go-to-market execution—mentoring emerging entrepreneurial talent.",
     highlighted: true
   },
   { src: "/gallery/12.webp", alt: "Nabeel Shamim receiving a prestigious recognition award" },
@@ -80,17 +95,22 @@ const galleryImages: GalleryItem[] = [
     title: "Executive Session at United Bank Limited (UBL)",
     subtitle: "UBL Head Office • Karachi",
     tag: "Corporate Leadership & Innovation",
-    location: "UBL Head Office, Karachi, Pakistan",
+    location: "United Bank Limited, Karachi, Pakistan",
     description: "Honored to be invited by the Vice President at UBL for an engaging session with the team on leadership, business, innovation, and the mindset required for building high-performing teams — sharing entrepreneurial journeys, operational scaling insights, and strategies for sustainable growth.",
     highlighted: true
   },
   { src: "/gallery/16.png",  alt: "Nabeel Shamim discussing business strategies at a roundtable conference" },
-  { src: "/gallery/17.png",  alt: "Nabeel Shamim speaking session as a featured entrepreneur" },
   { 
-    src: "/gallery/18 (1).jpeg", 
-    alt: "Nabeel Shamim during an executive visit in New York City",
-    aspectRatio: "3/4",
-    objectPosition: "center 20%"
+    src: "/gallery/17.png",  
+    alt: "Muhammad Nabeel Shamim mentoring and guiding young entrepreneurs",
+    title: "Motivating & Guiding Young Entrepreneurs",
+    subtitle: "Youth Mentorship • Iqra University",
+    tag: "Youth Mentorship & Incubation",
+    location: "Iqra University, Karachi, Pakistan",
+    description: "Muhammad Nabeel Shamim engaging directly with student innovators, reviewing business model canvases, and mentoring the next generation of entrepreneurs on leadership mindset, product validation, and scaling ideas into sustainable ventures.",
+    highlighted: true,
+    aspectRatio: "16/10",
+    objectPosition: "center 25%"
   },
   { 
     src: "/gallery/18.jpeg", 
@@ -99,16 +119,16 @@ const galleryImages: GalleryItem[] = [
     objectPosition: "center 20%"
   },
   { 
-    src: "/gallery/19.jpeg", 
-    alt: "Nabeel Shamim attending a professional networking meetup",
-    aspectRatio: "3/4",
-    objectPosition: "center 20%"
-  },
-  { 
     src: "/gallery/20.jpeg", 
-    alt: "Nabeel Shamim meeting with international industry colleagues in New York",
-    aspectRatio: "3/4",
-    objectPosition: "center 15%"
+    alt: "Muhammad Nabeel Shamim with Global Technology Leader, Bank of America",
+    title: "With Global Technology Leader, Bank of America",
+    subtitle: "Bank of America • New York",
+    tag: "Executive Leadership & Global Tech",
+    location: "New York, United States",
+    description: "Muhammad Nabeel Shamim meeting with a Global Technology Leader from Bank of America — discussing cross-border technological enterprise operations, digital finance infrastructure, and scaling high-efficiency remote global talent models.",
+    highlighted: true,
+    aspectRatio: "16/10",
+    objectPosition: "center 20%"
   },
   { 
     src: "/gallery/21.jpeg", 
@@ -124,15 +144,27 @@ const galleryImages: GalleryItem[] = [
   },
   { 
     src: "/gallery/23.jpeg", 
-    alt: "Nabeel Shamim at an executive summit in the United States",
-    aspectRatio: "4/3",
-    objectPosition: "center 30%"
+    alt: "Muhammad Nabeel Shamim at Paklaunch Event at Houston Hall, New York City",
+    title: "Paklaunch Event @ Houston Hall, NYC",
+    subtitle: "Paklaunch • Houston Hall, NYC",
+    tag: "Global Tech & Venture Ecosystem",
+    location: "Houston Hall, New York, United States",
+    description: "Muhammad Nabeel Shamim connecting with international entrepreneurs, tech founders, and investors at the Paklaunch gathering at Houston Hall, New York City — discussing tech-enabled cross-border ventures, startup growth, and ecosystem building.",
+    highlighted: true,
+    aspectRatio: "16/10",
+    objectPosition: "center 25%"
   },
   { 
     src: "/gallery/24.jpeg", 
-    alt: "Nabeel Shamim networking with global business leaders",
+    alt: "Muhammad Nabeel Shamim speaking at Prodisols (Prodigy Solutions®) Annual Summit 2025",
+    title: "Prodisols Annual Summit 2025",
+    subtitle: "Prodigy Solutions® • NASTP",
+    tag: "Annual Company Summit",
+    location: "NASTP Silicon Valley, Karachi, Pakistan",
+    description: "Muhammad Nabeel Shamim addressing the team and leadership at the Prodisols (Prodigy Solutions®) Annual Summit 2025 at NASTP — celebrating company milestones, excellence in cross-border tech delivery, and setting the strategic vision for the upcoming year.",
+    highlighted: true,
     aspectRatio: "3/4",
-    objectPosition: "center 15%"
+    objectPosition: "center 22%"
   },
   { 
     src: "/gallery/25.jpeg", 
@@ -142,9 +174,15 @@ const galleryImages: GalleryItem[] = [
   },
   { 
     src: "/gallery/26.jpeg", 
-    alt: "Nabeel Shamim attending an industry leadership conference",
-    aspectRatio: "3/4",
-    objectPosition: "center 18%"
+    alt: "Muhammad Nabeel Shamim delivering keynote speech at ISNA Hackathon, Huntington Place",
+    title: "Keynote Speech at ISNA Hackathon",
+    subtitle: "ISNA Hackathon • Huntington Place",
+    tag: "Keynote & Hackathon Mentorship",
+    location: "Huntington Place, Detroit, Michigan, United States",
+    description: "Muhammad Nabeel Shamim delivering a keynote address and serving as a judge and mentor at the ISNA Hackathon at Huntington Place — inspiring emerging tech founders, software builders, and innovators to solve real-world problems and scale scalable tech solutions.",
+    highlighted: true,
+    aspectRatio: "16/10",
+    objectPosition: "center 45%"
   },
   { 
     src: "/gallery/27.jpeg", 
@@ -339,20 +377,20 @@ const GallerySection = () => {
 
                   {/* HOVER OVERLAY (ONLY ON HIGHLIGHTED IMAGE) */}
                   {isHighlighted && (
-                    <div className="absolute inset-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent flex flex-col justify-end p-6 text-white opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 ease-out pointer-events-none">
-                      <div className="flex items-center gap-2 mb-1.5">
-                        <span className="h-px w-5 bg-primary" />
-                        <span className="text-[10px] font-bold tracking-[0.25em] uppercase text-primary">
+                    <div className="absolute inset-0 z-20 bg-gradient-to-t from-black/95 via-black/50 to-transparent flex flex-col justify-end p-5 sm:p-6 text-white opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 ease-out pointer-events-none">
+                      <div className="flex items-center gap-2 mb-1.5 min-w-0">
+                        <span className="h-px w-5 bg-primary shrink-0" />
+                        <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-primary truncate">
                           {item.subtitle || item.location || "Executive Milestone"}
                         </span>
                       </div>
-                      <h3 className="text-base md:text-lg font-bold tracking-tight text-white leading-snug">
+                      <h3 className="text-base md:text-lg font-bold tracking-tight text-white leading-snug line-clamp-2">
                         {item.title}
                       </h3>
                       <p className="text-xs text-zinc-300 mt-1 line-clamp-1 font-normal">
                         {item.tag || "Executive Highlight"}
                       </p>
-                      <div className="mt-3 flex items-center gap-1.5 text-[11px] font-medium text-primary">
+                      <div className="mt-2.5 flex items-center gap-1.5 text-[11px] font-medium text-primary">
                         <span>Click to view details</span>
                         <span>→</span>
                       </div>
@@ -423,10 +461,11 @@ const GallerySection = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 {/* LEFT: IMAGE */}
-                <div className="relative w-full md:w-1/2 flex-shrink-0 rounded-2xl overflow-hidden bg-black/40 border border-white/5 aspect-[16/11]">
+                <div className={`relative w-full md:w-1/2 flex-shrink-0 rounded-2xl overflow-hidden bg-black/40 border border-white/5 ${selectedItem.aspectRatio === '3/4' ? 'aspect-[3/4] max-h-[50vh] md:max-h-[60vh]' : 'aspect-[16/11]'}`}>
                   <img
                     src={selectedItem.src}
                     alt={selectedItem.alt}
+                    style={{ objectPosition: selectedItem.objectPosition || 'center center' }}
                     className="w-full h-full object-cover"
                   />
                 </div>

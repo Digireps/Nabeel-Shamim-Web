@@ -4,37 +4,37 @@ import { Badge } from "@/components/ui/badge";
 
 const awards = [
   {
-    title: "Forbes Business Council Induction",
-    organization: "Forbes Business Council",
-    category: "Executive Leadership",
-    year: "2025",
-    description:
-      "Inducted into the invitation-only community for senior-level executives and entrepreneurs, recognized for pioneering cross-border workforce infrastructure.",
-    highlight: true,
-    url: "https://councils.forbes.com/profile/Muhammad-Nabeel-Shamim-Founder-CEO-DigiReps/f15d004f-bae0-4bee-8276-1af1b187609e",
-    icon: Trophy,
-  },
-  {
     title: "Top 100 Entrepreneurs",
-    organization: "CxO Global Forum",
+    organization: "By CxO Global Forum",
     category: "Global Innovation",
-    year: "2024",
+    year: "2026",
     description:
-      "Honored among the top 100 international business minds and serial leaders driving technological workforce modernization and cross-border job creation.",
+      "Honored among the top 100 business minds in Pakistan for driving tech-enabled remote workforce modernization and growth strategies for globally distributed teams.",
     highlight: true,
     url: "https://www.linkedin.com/posts/mnabeelshamim_cxoglobalforum-forbes-top100entrepreneurs-activity-7423090351701319680-74of",
     icon: Award,
   },
   {
     title: "Leadership & Industry Excellence Award",
-    organization: "Connected Pakistan",
+    organization: "By Connected Pakistan",
     category: "Technology & Leadership",
-    year: "2026",
+    year: "August 2026",
     description:
       "Conferred at Konnect-X, Pakistan's Premium Tech Conference, honoring visionary leadership, tech workforce innovation, and impactful contributions to scaling global digital enterprises.",
     highlight: false,
     url: "https://www.linkedin.com/posts/mnabeelshamim_konnect-ugcPost-7489711719905341440-CML0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAApo16YBEfp58R4oQYOHWUYpAihID2Eqaj0",
     icon: TrendingUp,
+  },
+  {
+    title: "Forbes Business Council Induction",
+    organization: "Forbes Business Council",
+    category: "Executive Leadership",
+    year: "September 2025",
+    description:
+      "Inducted into the invitation-only Forbes Council, an international community for C-level executives, for pioneering cross-border workforce infrastructure.",
+    highlight: true,
+    url: "https://councils.forbes.com/profile/Muhammad-Nabeel-Shamim-Founder-CEO-DigiReps/f15d004f-bae0-4bee-8276-1af1b187609e",
+    icon: Trophy,
   },
 ];
 
@@ -75,29 +75,23 @@ const AwardsSection = () => {
         <div className="grid lg:grid-cols-12 gap-6 mb-8">
           {/* Main Visual Feature Card */}
           <motion.div
-            className="lg:col-span-5 relative group rounded-2xl md:rounded-3xl overflow-hidden bg-white border border-zinc-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] hover:border-primary/40 transition-all duration-500 flex flex-col justify-between"
+            className="lg:col-span-5 relative group rounded-2xl md:rounded-3xl overflow-hidden bg-white border border-zinc-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] hover:border-primary/40 transition-all duration-500 flex flex-col"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-10px" }}
             transition={{ duration: 0.6 }}
           >
-            <div className="relative aspect-[15/11] overflow-hidden bg-zinc-100">
+            <div className="relative aspect-[4/3] lg:aspect-auto lg:flex-1 lg:min-h-[280px] overflow-hidden bg-zinc-100">
               <img
                 src="/gallery/awards.jpeg"
                 alt="Muhammad Nabeel Shamim receiving prestigious entrepreneurship recognition award"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-              <div className="absolute top-4 left-4">
-                <Badge className="bg-black/75 backdrop-blur-md text-white font-extrabold text-[9px] uppercase tracking-wider gap-1.5 border border-white/20 px-3 py-1 shadow-md">
-                  <Award size={11} className="stroke-[2.5] text-primary" />
-                  Leadership Speech
-                </Badge>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent pointer-events-none" />
             </div>
 
-            <div className="p-6 md:p-8">
+            <div className="p-6 md:p-8 flex-shrink-0 bg-white">
               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-primary block mb-2">
                 Moments of Recognition
               </span>
@@ -105,7 +99,7 @@ const AwardsSection = () => {
                 Global Entrepreneurial Impact
               </h3>
               <p className="text-zinc-600 text-sm leading-relaxed mb-4">
-                Recognized on international stages for empowering emerging talent and architecting sustainable cross-border workforce systems.
+                Recognized in national and international forums for empowering emerging talent and architecting sustainable cross-border workforce systems.
               </p>
               <div className="flex items-center gap-4 text-xs font-semibold text-zinc-400 pt-3 border-t border-zinc-100">
                 <span className="text-zinc-700">Executive Leadership</span>

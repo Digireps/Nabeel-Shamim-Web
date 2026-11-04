@@ -16,7 +16,7 @@ const roles = [
   {
     company: "Karachi Chamber of Commerce & Industry",
     role: "Official Member",
-    url: "https://www.kcci.com.pk/",
+    url: "https://www.kcci.com.pk/active-members.php/",
   },
   {
     company: "Prodigy Solutions®",
@@ -30,7 +30,7 @@ const roles = [
   },
    {
      company: "Plan9 (PITB)",
-     role: "Official Member",
+     role: "Senior Member",
      url: "https://www.pitb.gov.pk/",
    },
   {

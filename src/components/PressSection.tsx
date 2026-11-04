@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 
 const podcasts = [
   {
-    title: "Building DigiReps® & Scaling Sales Teams",
+    title: "Building DigiReps® & Scaling Remote Teams",
     videoId: "eM5UImLqFU8",
     url: "https://youtu.be/eM5UImLqFU8?si=u13McsNzsLWKCcEy",
   },
@@ -20,7 +20,7 @@ const podcasts = [
     url: "https://youtu.be/jbCObAiOZiQ?si=bMM-DvA7D9Dd1HG_",
   },
   {
-    title: "The CxO Talk: Scaling DigiReps® & Global Sales",
+    title: "The CxO Talk: Scaling DigiReps® & Globally Distributed Teams",
     videoId: "ast3S1y5Xgo",
     url: "https://www.youtube.com/live/ast3S1y5Xgo?si=f2hgcVbn37X0siwZ",
   },
@@ -34,11 +34,18 @@ const featuredItems = [
     url: "https://gritdaily.com/the-journey-of-muhammad-nabeel-shamim/",
   },
   {
-    title: "Forbes Business Council Member Profile",
-    source: "Forbes Council",
-    watermark: "FORBES",
-    url: "https://councils.forbes.com/profile/Muhammad-Nabeel-Shamim-Founder-CEO-DigiReps/f15d004f-bae0-4bee-8276-1af1b187609e",
+    title: "Muhammad Nabeel Shamim Makes It To Forbes",
+    source: "Business Bytes",
+    watermark: "BYTES",
+    url: "https://businessbytes.pk/blog/2025/09/22/pakistani-entrepreneur-muhammad-nabeel-shamim-makes-it-to-forbes/",
+    featured: false,
   },
+  // {
+  //   title: "Forbes Business Council Member Profile",
+  //   source: "Forbes Council",
+  //   watermark: "FORBES",
+  //   url: "https://councils.forbes.com/profile/Muhammad-Nabeel-Shamim-Founder-CEO-DigiReps/f15d004f-bae0-4bee-8276-1af1b187609e",
+  // },
   {
     title: "Building Businesses and Shaping Modern Entrepreneurship",
     source: "Daily Pakistan Article",
@@ -69,13 +76,7 @@ const featuredItems = [
   //   watermark: "CXO",
   //   url: "https://www.cxoglobal.com",
   // },
-  {
-    title: "Muhammad Nabeel Shamim Makes It To Forbes",
-    source: "Business Bytes",
-    watermark: "BYTES",
-    url: "https://businessbytes.pk/blog/2025/09/22/pakistani-entrepreneur-muhammad-nabeel-shamim-makes-it-to-forbes/",
-    featured: false,
-  },
+  
   
   // {
   //   title: "Featured in PRWeb’s Press Release on Forbes Induction",
@@ -83,6 +84,25 @@ const featuredItems = [
   //   watermark: "PRWEB",
   //   url: "https://www.prweb.com/releases/digireps-founder--ceo-muhammad-n-shamim-inducted-into-forbes-business-council-302574419.html",
   // },
+];
+
+const pressLogos = [
+  { src: "/gallery/GritDaily.png", alt: "GritDaily publication on Muhammad Nabeel Shamim" },
+  { src: "/gallery/Forbes.png", alt: "Forbes publication featuring Muhammad Nabeel Shamim" },
+  { src: "/gallery/DailyPakistan.png", alt: "Daily Pakistan article on Muhammad Nabeel Shamim" },
+  { src: "/gallery/CeoWorld.png", alt: "CEO World Magazine feature on Nabeel Shamim" },
+  { src: "/gallery/StartupPakistan.png", alt: "Startup Pakistan spotlight on entrepreneur Nabeel Shamim" },
+  { src: "/gallery/FHM.png", alt: "FHM Pakistan feature on Nabeel Shamim" },
+  { src: "/gallery/Business-Bytes.png", alt: "Business Bytes press report on Muhammad Nabeel Shamim" },
+  { src: "/gallery/Loug.png", alt: "Loug media interview with Nabeel Shamim" },
+  { src: "/gallery/Metatainment.png", alt: "Metatainment news coverage on Nabeel Shamim" },
+];
+
+const loopedPressLogos = [
+  ...pressLogos,
+  ...pressLogos,
+  ...pressLogos,
+  ...pressLogos,
 ];
 
 const PressSection = () => {
@@ -109,36 +129,40 @@ const PressSection = () => {
             </p>
           </motion.div>
 
-          {/* As Featured In strip - High visibility brands */}
+          {/* As Featured In strip - Moving tagline / marquee */}
           <motion.div
-            className="flex flex-col items-center gap-6 mb-16"
+            className="flex flex-col items-center gap-6 mb-20 w-full overflow-hidden"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-10px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-500 font-bold">As Featured In</span>
-            <div className="flex flex-wrap items-center justify-center gap-x-6 sm:gap-x-8 md:gap-x-9 gap-y-5 px-4 md:px-0 max-w-5xl mx-auto">
-               {[
-                { src: "/gallery/GritDaily.png", alt: "GritDaily publication on Muhammad Nabeel Shamim" },
-                { src: "/gallery/Forbes.png", alt: "Forbes publication featuring Muhammad Nabeel Shamim" },
-                { src: "/gallery/DailyPakistan.png", alt: "Daily Pakistan article on Muhammad Nabeel Shamim" },
-                { src: "/gallery/CeoWorld.png", alt: "CEO World Magazine feature on Nabeel Shamim" },
-                { src: "/gallery/StartupPakistan.png", alt: "Startup Pakistan spotlight on entrepreneur Nabeel Shamim" },
-                { src: "/gallery/FHM.png", alt: "FHM Pakistan feature on Nabeel Shamim" },
-                { src: "/gallery/Business-Bytes.png", alt: "Business Bytes press report on Muhammad Nabeel Shamim" },
-                { src: "/gallery/Loug.png", alt: "Loug media interview with Nabeel Shamim" },
-                { src: "/gallery/Metatainment.png", alt: "Metatainment news coverage on Nabeel Shamim" },
-              ].map((logo) => (
-                <div key={logo.src} className="flex items-center justify-center py-1">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="h-4 sm:h-5 md:h-6 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
+            <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-500 font-bold">Featured In</span>
+            
+            <div className="relative w-full overflow-hidden py-3">
+              {/* Left & Right gradient edge fades for smooth entrance/exit */}
+              <div className="absolute inset-y-0 left-0 w-20 sm:w-36 bg-gradient-to-r from-[#050505] to-transparent z-10 pointer-events-none" />
+              <div className="absolute inset-y-0 right-0 w-20 sm:w-36 bg-gradient-to-l from-[#050505] to-transparent z-10 pointer-events-none" />
+
+              {/* Moving Track */}
+              <div
+                className="press-ticker-track"
+                style={{ willChange: "transform" }}
+              >
+                {loopedPressLogos.map((logo, index) => (
+                  <div
+                    key={`${logo.src}-${index}`}
+                    className="flex items-center justify-center mx-8 sm:mx-12 shrink-0 py-1"
+                  >
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="h-5 sm:h-6 md:h-7 w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </motion.div>
           {/* Featured highlight cards */}

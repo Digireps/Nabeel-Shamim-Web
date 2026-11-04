@@ -66,7 +66,7 @@ const IntroductionSection = () => {
               <div className="grid md:grid-cols-2 gap-10">
                 <div className="space-y-5">
                   <p className="text-lg text-zinc-400 leading-relaxed font-medium italic">
-                    "While coming from underprivileged beginnings, by 28, Muhammad had already made a fortune not just for himself but for the clients he served through strategic and relentless execution."
+                    "Coming from underprivileged beginnings, by 28, Muhammad had already made a fortune not just for himself but for the clients he served through strategic and relentless execution."
                   </p>
                   <p className="text-zinc-300/80 leading-relaxed text-sm">
                     As Founder & CEO of DigiReps®, Nabeel Shamim is on a mission to transform how businesses leverage remote talent. By identifying hiring inefficiencies, he built an ecosystem that delivers elite sales, support, and tech professionals while drastically reducing operational overhead.

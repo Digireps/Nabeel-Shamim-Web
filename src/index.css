@@ -99,6 +99,26 @@
     100% { transform: translateX(-50%); }
   }
 
+  /* ── Press Logos Marquee Ticker ── */
+  .press-ticker-track {
+    display: flex;
+    width: max-content;
+    animation: press-ticker 35s linear infinite;
+  }
+
+  .press-ticker-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes press-ticker {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
   /* ── Gallery infinite loop ── */
   .gallery-loop-track {
     display: flex;
