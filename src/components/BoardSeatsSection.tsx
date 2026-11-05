@@ -2,7 +2,15 @@ import { Briefcase, Award, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 
-const roles = [
+interface BoardRole {
+  company: string;
+  role: string;
+  url: string;
+  period?: string;
+  status?: string;
+}
+
+const roles: BoardRole[] = [
   {
     company: "DigiReps®",
     role: "Founder & CEO",
