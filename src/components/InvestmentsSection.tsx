@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { Building2, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 
@@ -50,6 +50,7 @@ const ventures = [
 const InvestmentsSection = () => {
   const [isMobile, setIsMobile] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(scrollRef, { margin: "200px 0px" });
 
   useEffect(() => {
     const checkMobile = () => {
@@ -110,8 +111,8 @@ const InvestmentsSection = () => {
               backfaceVisibility: 'hidden',
               WebkitBackfaceVisibility: 'hidden'
             }}
-            animate={isMobile ? false : { x: ["0%", "-33.333%"] }}
-            transition={isMobile ? undefined : {
+            animate={isMobile || !isInView ? false : { x: ["0%", "-33.333%"] }}
+            transition={isMobile || !isInView ? undefined : {
               ease: "linear",
               duration: 35,
               repeat: Infinity

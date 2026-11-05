@@ -14,14 +14,20 @@ function useCountUp(target: number, duration: number, start: boolean) {
   useEffect(() => {
     if (!start) return;
     let startTime: number | null = null;
+    let animId: number;
     const step = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 4);
       setCount(Math.floor(eased * target));
-      if (progress < 1) requestAnimationFrame(step);
+      if (progress < 1) {
+        animId = requestAnimationFrame(step);
+      }
     };
-    requestAnimationFrame(step);
+    animId = requestAnimationFrame(step);
+    return () => {
+      if (animId) cancelAnimationFrame(animId);
+    };
   }, [target, duration, start]);
   return count;
 }

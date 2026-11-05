@@ -17,8 +17,8 @@ const tickerItems = [
 ];
 
 const fadeUp = {
-  initial: { opacity: 0, y: 30, filter: "blur(10px)" },
-  animate: { opacity: 1, y: 0, filter: "blur(0px)" },
+  initial: { opacity: 0, y: 24 },
+  animate: { opacity: 1, y: 0 },
 };
 
 const marqueeShiftPercent = 50;
@@ -50,7 +50,7 @@ const HeroSection = () => {
           </span>
         </motion.h1>
         <p className="sr-only">
-          Muhammad Nabeel Shamim — Founder & CEO of DigiReps®, Forbes Business Council Member, Pakistani entrepreneur
+          Muhammad Nabeel Shamim, Founder & CEO of DigiReps®, Forbes Business Council Member, Pakistani entrepreneur
           pioneering remote workforce solutions globally.
         </p>
 

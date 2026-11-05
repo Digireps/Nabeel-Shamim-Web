@@ -20,15 +20,15 @@ export interface GalleryItem {
 }
 
 const galleryImages: GalleryItem[] = [
-  { src: "/gallery/1.webp",  alt: "Nabeel Shamim presenting at a corporate event" },
+  { src: "/gallery/1.webp",  alt: "Muhammad Nabeel Shamim presenting at a corporate leadership event" },
   { 
     src: "/gallery/2.webp", 
     alt: "Muhammad Nabeel Shamim featured on the cover of FHM Pakistan magazine",
-    title: "Featured on Cover of FHM Pakistan",
-    subtitle: "FHM Pakistan • Cover Feature",
+    title: "Featured on the Cover of FHM Magazine",
+    subtitle: "FHM Pakistan Magazine • Cover Feature",
     tag: "Media Cover Story",
     location: "Karachi, Pakistan",
-    description: "Featured on the cover of FHM Pakistan — chronicling the journey of building DigiReps® into one of America's fastest-growing remote workforce solutions, from Karachi to the global stage as a Forbes-recognized entrepreneur.",
+    description: "Featured on the cover of FHM Magazine, chronicling the journey of building DigiReps® into one of America's fastest-growing remote workforce solutions, from Karachi to the global stage as a Forbes-recognized entrepreneur.",
     highlighted: true,
     link: {
       url: "https://www.fhmpakistan.com/muhammad-nabeel-shamim-a-name-to-watch-in-entrepreneurship-technology-global/",
@@ -37,8 +37,8 @@ const galleryImages: GalleryItem[] = [
     aspectRatio: "16/10",
     objectPosition: "center 20%"
   },
-  { src: "/gallery/3.webp",  alt: "Nabeel Shamim interacting with attendees at a tech summit" },
-  { src: "/gallery/4.webp",  alt: "Nabeel Shamim speaking on leadership and entrepreneurship" },
+  { src: "/gallery/3.webp",  alt: "Muhammad Nabeel Shamim interacting with attendees at a technology summit" },
+  { src: "/gallery/4.webp",  alt: "Muhammad Nabeel Shamim speaking on leadership and entrepreneurship" },
   { 
     src: "/gallery/5.webp", 
     alt: "Inauguration ceremony of the Regional Head Office of DigiReps® at NASTP Silicon Valley, Karachi",
@@ -46,19 +46,19 @@ const galleryImages: GalleryItem[] = [
     subtitle: "NASTP Silicon Valley • Karachi",
     tag: "Executive Milestone",
     location: "NASTP Silicon Valley, Karachi, Pakistan",
-    description: "Snaps & glimpses from the inauguration ceremony of the Regional Head Office of DigiReps® at NASTP Silicon Valley, Karachi — establishing regional infrastructure to scale global remote talent operations under the leadership of Founder & CEO Muhammad Nabeel Shamim.",
+    description: "Glimpses from the inauguration ceremony of the Regional Head Office of DigiReps® at NASTP Silicon Valley in Karachi, establishing key infrastructure to scale global remote talent operations under the leadership of Founder & CEO Muhammad Nabeel Shamim.",
     highlighted: true
   },
-  { src: "/gallery/6.webp",  alt: "Nabeel Shamim networking with industry leaders" },
-  { src: "/gallery/7.webp",  alt: "Nabeel Shamim attending a Forbes Business Council event" },
+  { src: "/gallery/6.webp",  alt: "Muhammad Nabeel Shamim networking with international industry leaders" },
+  { src: "/gallery/7.webp",  alt: "Muhammad Nabeel Shamim attending a Forbes Business Council gathering" },
   { 
     src: "/gallery/8.webp", 
-    alt: "Muhammad Nabeel Shamim featuring on Adnan Faisal Podcast",
+    alt: "Muhammad Nabeel Shamim featured on the Adnan Faisal Podcast",
     title: "The DigiReps® Journey: Adnan Faisal Podcast",
     subtitle: "Adnan Faisal Podcast • FHM Pakistan",
     tag: "Media & Thought Leadership",
     location: "Karachi, Pakistan",
-    description: "Muhammad Nabeel Shamim featured on the Adnan Faisal Podcast, diving into the journey of scaling DigiReps® into an international remote workforce powerhouse — exploring global talent infrastructure, operational grit, and empowering local professionals on world stages.",
+    description: "Muhammad Nabeel Shamim featured on the Adnan Faisal Podcast, diving into the journey of scaling DigiReps® into an international remote workforce powerhouse while exploring global talent infrastructure, operational grit, and empowering local professionals on world stages.",
     highlighted: true,
     link: {
       url: "https://www.youtube.com/watch?v=B7QrhYaoBQg",
@@ -67,39 +67,39 @@ const galleryImages: GalleryItem[] = [
   },
   { 
     src: "/gallery/9.webp", 
-    alt: "Muhammad Nabeel Shamim with Mayor of Karachi Barrister Murtaza Wahab",
+    alt: "Muhammad Nabeel Shamim with Mayor of Karachi, Barrister Murtaza Wahab",
     title: "Business Venture Inauguration with the Mayor of Karachi",
     subtitle: "Civic Leadership • Karachi",
     tag: "Civic & Leadership Dialogue",
     location: "Karachi, Pakistan",
-    description: "Muhammad Nabeel Shamim alongside the Mayor of Karachi, Barrister Murtaza Wahab: Inaugurating a new business venture and discussing urban development, youth digital enablement, and collaborative public-private initiatives to accelerate economic momentum across Karachi.",
+    description: "Muhammad Nabeel Shamim alongside the Mayor of Karachi, Barrister Murtaza Wahab, inaugurating a new venture at Safari Park, Karachi, and discussing urban development, youth digital enablement, and collaborative initiatives to support regional economic growth.",
     highlighted: true
-},
-  { src: "/gallery/10.webp", alt: "Nabeel Shamim giving an interview on business growth and leadership" },
+  },
+  { src: "/gallery/10.webp", alt: "Muhammad Nabeel Shamim sharing insights on business growth and leadership" },
   { 
     src: "/gallery/11.webp", 
-    alt: "Muhammad Nabeel Shamim as Jury at Iqra University Youth Entrepreneur Showcase Season 08",
-    title: "Youth Entrepreneur Showcase: Season 08",
+    alt: "Muhammad Nabeel Shamim serving as jury member at Iqra University Youth Entrepreneur Showcase Season 8",
+    title: "Youth Entrepreneur Showcase: Season 8",
     subtitle: "Iqra University • Karachi",
     tag: "Academic & Jury Keynote",
     location: "Iqra University North Campus, Karachi, Pakistan",
-    description: "Invited as a jury member and keynote evaluator for Season 8 of the Youth Entrepreneur Showcase at Iqra University North Campus, Muhammad Nabeel Shamim, Head of Prodigy Solutions®, evaluated young entrepreneurs' pitches on market feasibility, cost and revenue structures, sustainable development goals (SDGs), and go-to-market execution—mentoring emerging entrepreneurial talent.",
+    description: "Invited as a jury member and keynote evaluator for Season 8 of the Youth Entrepreneur Showcase at Iqra University North Campus, Muhammad Nabeel Shamim, Head of Prodigy Solutions®, evaluated young entrepreneurs' pitches on market feasibility, cost and revenue structures, sustainable development goals (SDGs), and go-to-market execution to mentor emerging entrepreneurial talent.",
     highlighted: true
   },
-  { src: "/gallery/12.webp", alt: "Nabeel Shamim receiving a prestigious recognition award" },
-  { src: "/gallery/13.png",  alt: "Nabeel Shamim posing with corporate team and colleagues" },
-  { src: "/gallery/14.png",  alt: "Nabeel Shamim during a meeting with executive board members" },
+  { src: "/gallery/12.webp", alt: "Muhammad Nabeel Shamim receiving an entrepreneurship recognition award" },
+  { src: "/gallery/13.png",  alt: "Muhammad Nabeel Shamim with corporate team members and colleagues" },
+  { src: "/gallery/14.png",  alt: "Muhammad Nabeel Shamim in strategic discussion with executive board members" },
   { 
     src: "/gallery/15.png", 
-    alt: "Muhammad Nabeel Shamim with Vice President at United Bank Limited (UBL)",
+    alt: "Muhammad Nabeel Shamim with Vice President of United Bank Limited (UBL)",
     title: "Executive Session at United Bank Limited (UBL)",
-    subtitle: "UBL Head Office • Karachi",
+    subtitle: "United Bank Limited • Karachi, Pakistan",
     tag: "Corporate Leadership & Innovation",
     location: "United Bank Limited, Karachi, Pakistan",
-    description: "Honored to be invited by the Vice President at UBL for an engaging session with the team on leadership, business, innovation, and the mindset required for building high-performing teams — sharing entrepreneurial journeys, operational scaling insights, and strategies for sustainable growth.",
+    description: "Honored to be invited by the Vice President of UBL for an engaging session on leadership, business innovation, and high-performing team dynamics, sharing practical insights on operational scaling and sustainable company growth.",
     highlighted: true
   },
-  { src: "/gallery/16.png",  alt: "Nabeel Shamim discussing business strategies at a roundtable conference" },
+  { src: "/gallery/16.png",  alt: "Muhammad Nabeel Shamim discussing business strategies at a roundtable conference" },
   { 
     src: "/gallery/17.png",  
     alt: "Muhammad Nabeel Shamim mentoring and guiding young entrepreneurs",
@@ -107,14 +107,14 @@ const galleryImages: GalleryItem[] = [
     subtitle: "Youth Mentorship • Iqra University",
     tag: "Youth Mentorship & Incubation",
     location: "Iqra University, Karachi, Pakistan",
-    description: "Muhammad Nabeel Shamim engaging directly with student innovators, reviewing business model canvases, and mentoring the next generation of entrepreneurs on leadership mindset, product validation, and scaling ideas into sustainable ventures.",
+    description: "Muhammad Nabeel Shamim engaging directly with young entrepreneurs, reviewing business model canvases, and mentoring the next generation on leadership mindset, product validation, and scaling ideas into sustainable ventures.",
     highlighted: true,
     aspectRatio: "16/10",
     objectPosition: "center 25%"
   },
   { 
     src: "/gallery/18.jpeg", 
-    alt: "Nabeel Shamim in Manhattan, New York",
+    alt: "Muhammad Nabeel Shamim in Manhattan, New York",
     aspectRatio: "3/4",
     objectPosition: "center 20%"
   },
@@ -125,31 +125,31 @@ const galleryImages: GalleryItem[] = [
     subtitle: "Bank of America • New York",
     tag: "Executive Leadership & Global Tech",
     location: "New York, United States",
-    description: "Muhammad Nabeel Shamim meeting with a Global Technology Leader from Bank of America — discussing cross-border technological enterprise operations, digital finance infrastructure, and scaling high-efficiency remote global talent models.",
+    description: "Muhammad Nabeel Shamim meeting with a senior technology leader from Bank of America in New York to discuss cross-border enterprise operations, financial technology infrastructure, and global remote workforce models.",
     highlighted: true,
     aspectRatio: "16/10",
     objectPosition: "center 20%"
   },
   { 
     src: "/gallery/21.jpeg", 
-    alt: "Nabeel Shamim participating in an international business discussion",
+    alt: "Muhammad Nabeel Shamim participating in an international business discussion",
     aspectRatio: "3/4",
     objectPosition: "center 15%"
   },
   { 
     src: "/gallery/22.jpeg", 
-    alt: "Nabeel Shamim with executives and entrepreneurs at a corporate gathering",
+    alt: "Muhammad Nabeel Shamim with executives and entrepreneurs at a corporate gathering",
     aspectRatio: "3/4",
     objectPosition: "center 18%"
   },
   { 
     src: "/gallery/23.jpeg", 
     alt: "Muhammad Nabeel Shamim at Paklaunch Event at Houston Hall, New York City",
-    title: "Paklaunch Event @ Houston Hall, NYC",
+    title: "Paklaunch Event at Houston Hall, NYC",
     subtitle: "Paklaunch • Houston Hall, NYC",
     tag: "Global Tech & Venture Ecosystem",
     location: "Houston Hall, New York, United States",
-    description: "Muhammad Nabeel Shamim connecting with international entrepreneurs, tech founders, and investors at the Paklaunch gathering at Houston Hall, New York City — discussing tech-enabled cross-border ventures, startup growth, and ecosystem building.",
+    description: "Muhammad Nabeel Shamim connecting with international entrepreneurs, tech founders, and investors at the Paklaunch gathering at Houston Hall in New York City, discussing cross-border tech ventures, startup growth, and ecosystem building.",
     highlighted: true,
     aspectRatio: "16/10",
     objectPosition: "center 25%"
@@ -161,35 +161,35 @@ const galleryImages: GalleryItem[] = [
     subtitle: "Prodigy Solutions® • NASTP",
     tag: "Annual Company Summit",
     location: "NASTP Silicon Valley, Karachi, Pakistan",
-    description: "Muhammad Nabeel Shamim addressing the team and leadership at the Prodisols (Prodigy Solutions®) Annual Summit 2025 at NASTP — celebrating company milestones, excellence in cross-border tech delivery, and setting the strategic vision for the upcoming year.",
+    description: "Muhammad Nabeel Shamim addressing the team and leadership at the Prodisols (Prodigy Solutions®) Annual Summit 2025 at NASTP, celebrating company milestones, excellence in cross-border tech delivery, and setting the strategic vision for the upcoming year.",
     highlighted: true,
     aspectRatio: "3/4",
     objectPosition: "center 22%"
   },
   { 
     src: "/gallery/25.jpeg", 
-    alt: "Nabeel Shamim during an official business trip in the USA",
+    alt: "Muhammad Nabeel Shamim during an executive business trip in the United States",
     aspectRatio: "3/4",
     objectPosition: "center 20%"
   },
-  { 
-    src: "/gallery/26.jpeg", 
-    alt: "Muhammad Nabeel Shamim delivering keynote speech at ISNA Hackathon, Huntington Place",
-    title: "Keynote Speech at ISNA Hackathon",
-    subtitle: "ISNA Hackathon • Huntington Place",
-    tag: "Keynote & Hackathon Mentorship",
-    location: "Huntington Place, Detroit, Michigan, United States",
-    description: "Muhammad Nabeel Shamim delivering a keynote address and serving as a judge and mentor at the ISNA Hackathon at Huntington Place — inspiring emerging tech founders, software builders, and innovators to solve real-world problems and scale scalable tech solutions.",
-    highlighted: true,
-    aspectRatio: "16/10",
-    objectPosition: "center 45%"
-  },
-  { 
-    src: "/gallery/27.jpeg", 
-    alt: "Nabeel Shamim collaborating with executives at an enterprise forum",
-    aspectRatio: "3/4",
-    objectPosition: "center 18%"
-  },
+  // { 
+  //   src: "/gallery/26.jpeg", 
+  //   alt: "Muhammad Nabeel Shamim delivering keynote speech at ISNA Hackathon, Huntington Place",
+  //   title: "Keynote Speech at ISNA Hackathon",
+  //   subtitle: "ISNA Hackathon • Huntington Place, Detroit",
+  //   tag: "Keynote & Hackathon Mentorship",
+  //   location: "Huntington Place, Detroit, Michigan, United States",
+  //   description: "Muhammad Nabeel Shamim delivering a keynote address and serving as a judge and mentor at the ISNA Hackathon at Huntington Place, inspiring emerging tech founders, software builders, and innovators to solve real-world problems and build scalable solutions.",
+  //   highlighted: true,
+  //   aspectRatio: "16/10",
+  //   objectPosition: "center 45%"
+  // },
+  // { 
+  //   src: "/gallery/27.jpeg", 
+  //   alt: "Muhammad Nabeel Shamim collaborating with executives at an enterprise forum",
+  //   aspectRatio: "3/4",
+  //   objectPosition: "center 18%"
+  // },
 ];
 
 // 4 sets for seamless infinite loop with forward/backward jumps
@@ -239,8 +239,26 @@ const GallerySection = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Continuous auto-scroll loop via RAF (frame-rate independent)
+  const [isInViewport, setIsInViewport] = useState(false);
+
+  // Only run continuous animation when the gallery is near or within the viewport
   useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInViewport(entry.isIntersecting);
+      },
+      { rootMargin: "300px 0px" }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  // Continuous auto-scroll loop via RAF (frame-rate independent, pauses when off-screen)
+  useEffect(() => {
+    if (!isInViewport) return;
+
     let animationFrameId: number;
     let lastTime = performance.now();
     const speed = 40; // pixels per second
@@ -271,7 +289,7 @@ const GallerySection = () => {
 
     animationFrameId = requestAnimationFrame(step);
     return () => cancelAnimationFrame(animationFrameId);
-  }, [selectedItem]);
+  }, [selectedItem, isInViewport]);
 
   const handleManualScroll = (direction: 'left' | 'right') => {
     const el = scrollRef.current;
