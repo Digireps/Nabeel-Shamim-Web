@@ -66,10 +66,10 @@ const IntroductionSection = () => {
               <div className="grid md:grid-cols-2 gap-10">
                 <div className="space-y-5">
                   <p className="text-lg text-zinc-400 leading-relaxed font-medium italic">
-                    "While coming from underprivileged beginnings, by 28, Muhammad had already made a fortune not just for himself but for the clients he served through strategic and relentless execution."
+                    "Coming from underprivileged beginnings, by 28, Muhammad had already made a fortune not just for himself but for the clients he served through strategic and relentless execution."
                   </p>
                   <p className="text-zinc-300/80 leading-relaxed text-sm">
-                    As Founder & CEO of DigiReps, Nabeel Shamim is on a mission to transform how businesses leverage remote talent. By identifying hiring inefficiencies, he built an ecosystem that delivers elite sales, support, and tech professionals while drastically reducing operational overhead.
+                    As Founder & CEO of DigiReps®, Nabeel Shamim is on a mission to transform how businesses leverage remote talent. By identifying hiring inefficiencies, he built an ecosystem that delivers elite sales, support, and tech professionals while drastically reducing operational overhead.
                   </p>
                   <p className="text-zinc-300/80 leading-relaxed text-sm">
                     Nabeel also founded several other ventures. He invests, consults, and mentor startups as well.
@@ -78,13 +78,13 @@ const IntroductionSection = () => {
                 
                 <div className="space-y-6 pt-1">
                   <p className="text-zinc-500 leading-relaxed text-sm">
-                    Before DigiReps, he scaled Prodigy Solutions into a top-tier biz-dev agency, helping numerous U.S. businesses achieve Inc. 5000 status through high-impact strategies.
+                    Before DigiReps®, he scaled Prodigy Solutions® into a top-tier biz-dev and full-service IT company, helping numerous U.S. businesses achieve Inc. 5000 status through high-impact strategies.
                   </p>
                   
                   {/* Stats Card */}
                   <div className="p-6 rounded-3xl bg-white/[0.03] border border-white/5 backdrop-blur-sm">
                     <p className="text-sm font-bold text-zinc-400 mb-1">Top Venture</p>
-                    <p className="text-3xl font-black text-primary tracking-tighter">DigiReps</p>
+                    <p className="text-3xl font-black text-primary tracking-tighter">DigiReps®</p>
                     <p className="text-xs text-zinc-600 mt-2 uppercase tracking-widest font-bold">Currently valued at $3.2M</p>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const IntroductionSection = () => {
                   asChild
                 >
                   <a href="https://digireps.co/aboutus" target="_blank" rel="noopener noreferrer">
-                    Explore DigiReps <ArrowUpRight className="ml-2 w-5 h-5" />
+                    Explore DigiReps® <ArrowUpRight className="ml-2 w-5 h-5" />
                   </a>
                 </Button>
                 <div className="hidden sm:block">

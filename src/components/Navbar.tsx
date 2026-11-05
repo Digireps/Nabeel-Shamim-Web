@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navItems = [
   { label: "About", href: "#introduction" },
   { label: "Ventures", href: "#investments" },
+  { label: "Awards", href: "#awards" },
   { label: "Press", href: "#press" },
   { label: "Books", href: "#publications" },
   { label: "ASSOCIATIONS", href: "#board-seats" },
@@ -52,6 +53,13 @@ const Navbar = () => {
             <a
               key={item.label}
               href={item.href}
+              onClick={(e) => {
+                e.preventDefault();
+                const target = document.querySelector(item.href);
+                if (target) {
+                  target.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="px-5 py-2 text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500 hover:text-primary transition-all duration-500 relative group"
             >
               {item.label}
@@ -96,7 +104,14 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * i, ease: [0.22, 1, 0.36, 1] }}
                 className="text-3xl font-black uppercase tracking-tighter text-zinc-900 dark:text-white hover:text-primary transition-colors"
-                onClick={() => setMobileOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setMobileOpen(false);
+                  const target = document.querySelector(item.href);
+                  if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 {item.label}
               </motion.a>

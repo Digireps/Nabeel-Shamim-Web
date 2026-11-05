@@ -1,64 +1,52 @@
-import { Briefcase, Award, ArrowRight, ShieldCheck } from "lucide-react";
+import { Briefcase, Award, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 
 const roles = [
   {
-    company: "DigiReps",
+    company: "DigiReps®",
     role: "Founder & CEO",
-    period: "2023 - Present",
     url: "https://digireps.co/aboutus",
-    status: "Active"
   },
   {
     company: "Forbes Business Council",
-    role: "Official Member",
-    period: "Present",
+    role: "Official Member . Expert Panel Contributor",
     url: "https://councils.forbes.com/profile/Muhammad-Nabeel-Shamim-Founder-CEO-DigiReps/f15d004f-bae0-4bee-8276-1af1b187609e",
-    status: "Active"
-  },
-  {
-    company: "Prodigy Solutions",
-    role: "Founder & CEO",
-    period: "2016 - Present",
-    url: "https://www.prodisols.com/about-us/",
-    status: "Active"
-  },
-  {
-    company: "CxO Global Forum",
-    role: "Official Member",
-    period: "Present",
-    url: "https://cxoforum.global/",
-    status: "Active"
-  },
-  {
-    company: "PSEB",
-    role: "Official Member",
-    period: "Present",
-    url: "https://techdestination.com/about-us/",
-    status: "Active"
-  },
-  {
-    company: "Digify Global",
-    role: "Founder & CEO",
-    period: "2021 - Present",
-    url: "https://digifyglobal.com/about-digify/",
-    status: "Active"
   },
   {
     company: "Karachi Chamber of Commerce & Industry",
     role: "Official Member",
-    period: "Present",
-    url: "https://www.kcci.com.pk/",
-    status: "Active"
+    url: "https://www.kcci.com.pk/active-members.php/",
   },
   {
-    company: "Connected Pakistan",
+    company: "Prodigy Solutions®",
+    role: "Founder & CEO",
+    url: "https://www.prodisols.com/about-us/",
+  },
+  {
+    company: "CxO Global Forum",
+    role: "Senior Member",
+    url: "https://cxoforum.global/directory.php?q=Nabeel+Shamim",
+  },
+   {
+     company: "Plan9 (PITB)",
+     role: "Senior Member",
+     url: "https://www.pitb.gov.pk/",
+   },
+  {
+    company: "PSEB",
     role: "Official Member",
-    period: "Present",
-    url: "https://people.connectedpakistan.pk/muhammad-nabeel-shamim",
-    status: "Active"
-  }
+    url: "https://techdestination.com/about-us/",
+  },
+
+
+  // {
+  //   company: "Connected Pakistan",
+  //   role: "Official Member",
+  //   period: "Present",
+  //   url: "https://people.connectedpakistan.pk/muhammad-nabeel-shamim",
+  //   status: "Active"
+  // }
 ];
 
 const BoardSeatsSection = () => {
@@ -122,16 +110,22 @@ const BoardSeatsSection = () => {
                     </h3>
                     <div className="flex items-center gap-3">
                       <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">{seat.role}</p>
-                      <div className="w-1 h-1 rounded-full bg-zinc-200" />
-                      <p className="text-[10px] text-zinc-400 font-medium">{seat.period}</p>
+                      {seat.period && (
+                        <>
+                          <div className="w-1 h-1 rounded-full bg-zinc-200" />
+                          <p className="text-[10px] text-zinc-400 font-medium">{seat.period}</p>
+                        </>
+                      )}
                     </div>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-6 mt-6 md:mt-0">
-                  <Badge variant="outline" className="text-[9px] uppercase tracking-widest px-3 py-1 font-bold border-zinc-200 text-zinc-400 group-hover:border-primary/30 group-hover:text-primary transition-colors">
-                    {seat.status}
-                  </Badge>
+                  {seat.status && (
+                    <Badge variant="outline" className="text-[9px] uppercase tracking-widest px-3 py-1 font-bold border-zinc-200 text-zinc-400 group-hover:border-primary/30 group-hover:text-primary transition-colors">
+                      {seat.status}
+                    </Badge>
+                  )}
 
                   {/* Clean CTA Arrow */}
                   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-zinc-100 text-zinc-300 group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-500">
